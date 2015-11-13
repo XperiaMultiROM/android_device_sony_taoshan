@@ -14,11 +14,11 @@
 
 $(call inherit-product, device/sony/taoshan/full_taoshan.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+# Inherit Omni GSM telephony parts
+$(call inherit-product, vendor/omni/config/gsm.mk)
 
-# Inherit CM common Phone stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit our omni product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
 
 # Set build fingerprint / ID / Prduct Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -28,4 +28,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Override some inherited defines
 PRODUCT_DEVICE := taoshan
-PRODUCT_NAME := cm_taoshan
+PRODUCT_NAME := omni_taoshan

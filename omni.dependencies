@@ -1,0 +1,20 @@
+[
+    {
+        "remote": "omnirom",
+        "repository": "android_device_qcom_common",
+        "target_path": "device/qcom/common",
+        "revision": "android-5.1"
+    },
+    {
+        "remote": "omnirom",
+        "repository": "android_device_sony_common",
+        "target_path": "device/sony/common",
+        "revision": "android-5.1"
+    },
+    {
+        "remote": "github",
+        "repository": "XperiaMultiROM/android_kernel_sony_msm8930",
+        "target_path": "kernel/sony/msm8930",
+        "revision": "android-5.1-mrom"
+    }
+]

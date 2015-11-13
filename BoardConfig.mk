@@ -118,7 +118,6 @@ TARGET_PROVIDES_LIBLIGHT := true
 
 # Power HAL
 TARGET_POWERHAL_VARIANT := qcom
-CM_POWERHAL_EXTENSION := qcom
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
@@ -149,8 +148,6 @@ BLUE_LED_PATH := /sys/class/leds/led:rgb_blue/brightness
 BOARD_USES_QC_TIME_SERVICES := true
 
 TARGET_POWERHAL_NO_TOUCH_BOOST := true
-
-BOARD_HARDWARE_CLASS := device/sony/taoshan/cmhw
 
 # RIL
 BOARD_RIL_CLASS := ../../../device/sony/taoshan/ril/
