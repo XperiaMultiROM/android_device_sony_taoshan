@@ -129,6 +129,16 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 BOARD_CUSTOM_BOOTIMG_MK := device/sony/taoshan/custombootimg.mk
 
+# MultiROM
+MR_INPUT_TYPE := type_b
+MR_INIT_DEVICES := device/sony/taoshan/multirom/init_devices.c
+MR_DPI := xhdpi
+MR_DPI_FONT := 216
+MR_FSTAB := device/sony/taoshan/rootdir/root/twrp.fstab
+MR_USE_MROM_FSTAB := true
+MR_KEXEC_MEM_MIN := 0x85000000
+MR_DEVICE_VARIANTS := C2105 C2104 taoshan
+
 # Healthd
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGER_SHOW_PERCENTAGE := true
